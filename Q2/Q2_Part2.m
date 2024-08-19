@@ -1,0 +1,17 @@
+image = imread('image.png');
+a = ones(3,3);
+out = imconvolution(image, a, 'Median');
+figure();
+imshow(out);
+imwrite(out,'Q2_Part2_Filter3_Image.png');
+b = ones(5,5);
+out = imconvolution(image, b, 'Median');
+figure();
+imshow(out);
+imwrite(out,'Q2_Part2_Filter5_Image.png');
+c = ones(7,7);
+out = imconvolution(image, c, 'Median');
+figure();
+imshow(out);
+imwrite(out,'Q2_Part2_Filter7_Image.png');
+imshow(out);

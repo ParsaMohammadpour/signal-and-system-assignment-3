@@ -1,0 +1,14 @@
+image = imread('image.png');
+out = imconvolution(image, fspecial('average',3), 'average');
+figure();
+imshow(out);
+imwrite(out,'Q2_Part1_Filter3_Image.png');
+out = imconvolution(image, fspecial('average',5),'average');
+figure();
+imshow(out);
+imwrite(out,'Q2_Part1_Filter5_Image.png');
+out = imconvolution(image, fspecial('average',7), 'average');
+figure();
+imshow(out);
+imwrite(out,'Q2_Part1_Filter7_Image.png');
+imshow(out);

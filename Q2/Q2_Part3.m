@@ -1,0 +1,14 @@
+image = imread('image.png');
+out = imconvolution(image, fspecial('gaussian',3, 1.5), 'gaussian');
+figure();
+imshow(out);
+imwrite(out,'Q2_Part3_Filter3_Image.png');
+out = imconvolution(image, fspecial('gaussian',5, 1.5), 'gaussian');
+figure();
+imshow(out);
+imwrite(out,'Q2_Part3_Filter5_Image.png');
+out = imconvolution(image, fspecial('gaussian',7, 1.5), 'gaussian');
+figure();
+imshow(out);
+imwrite(out,'Q2_Part3_Filter7_Image.png');
+imshow(out);
